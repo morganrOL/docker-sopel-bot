@@ -1,6 +1,4 @@
 FROM alpine:3.8
-ENV http_proxy=http://proxy:8080
-ENV https_proxy=https://proxy:8080
 RUN apk add --update nginx python3 enchant && \
     python3 -m ensurepip && \
     pip3 install --upgrade pip sopel &&\
